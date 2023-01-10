@@ -79,15 +79,19 @@ namespace UpdateWordDoc
         private void button1_Click(object sender, EventArgs e)
         {
             //these are defined in the word doc for quick find and replace operations
-            const string positionText = "{POSITION_NAME}";
+            const string dateText = "{DATE}";
+            const string positionUppercaseText = "{POSITION_NAME_UPPERCASE}";
+            const string positionLowercaseText = "{POSITION_NAME_LOWERCASE}";
             const string hiringNameText = "{HIRING_NAME}";
             const string companyNameText = "{COMPANY_NAME}";
             const string addressText = "{ADDRESS}";
             const string companyActivityText = "{COMPANY_ACTIVITY}";
-            const string skillsText = "{SKILL_1 • SKILL_2 • SKILL_3}";
+            const string skillsText = "{SKILLS}";
 
             //get data from text boxes
-            string positionData = positionBox.Text;
+            string dateData = DateTime.Now.ToString("MM/dd/yyyy");
+            string positionUppercaseData = positionBox.Text.ToUpper();
+            string positionLowercaseData = positionBox.Text;
             string hiringNameData = nameBox.Text;
             string companyNameData = companyNameBox.Text;
             string addressData = addressBox.Text;
@@ -95,14 +99,16 @@ namespace UpdateWordDoc
             string skillsData = skillsBox.Text;
 
             //copy and rename the doc
-            string newDocPath = copyAndRenameDoc(positionData, companyNameData);
+            string newDocPath = copyAndRenameDoc(positionLowercaseData, companyNameData);
 
             //create Word application object
             Microsoft.Office.Interop.Word.Application app = new Microsoft.Office.Interop.Word.Application();
             Document doc = app.Documents.Open(newDocPath);
 
             //find and replace the text in the new Word doc
-            findAndReplace(app, doc, positionText, positionData);
+            findAndReplace(app, doc, dateText, dateData);
+            findAndReplace(app, doc, positionUppercaseText, positionUppercaseData);
+            findAndReplace(app, doc, positionLowercaseText, positionLowercaseData);
             findAndReplace(app, doc, hiringNameText, hiringNameData);
             findAndReplace(app, doc, companyNameText, companyNameData);
             findAndReplace(app, doc, addressText, addressData);

@@ -41,14 +41,14 @@ namespace UpdateWordDoc
             this.companyActivityBox = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.skillsBox = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.skillsLabel = new System.Windows.Forms.Label();
+            this.skillsBox = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.button1.Location = new System.Drawing.Point(362, 371);
+            this.button1.Location = new System.Drawing.Point(344, 370);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(192, 67);
             this.button1.TabIndex = 0;
@@ -60,7 +60,7 @@ namespace UpdateWordDoc
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label1.Location = new System.Drawing.Point(84, 111);
+            this.label1.Location = new System.Drawing.Point(87, 96);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(117, 20);
             this.label1.TabIndex = 3;
@@ -69,7 +69,7 @@ namespace UpdateWordDoc
             // positionBox
             // 
             this.positionBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.positionBox.Location = new System.Drawing.Point(235, 105);
+            this.positionBox.Location = new System.Drawing.Point(245, 93);
             this.positionBox.Name = "positionBox";
             this.positionBox.Size = new System.Drawing.Size(486, 26);
             this.positionBox.TabIndex = 4;
@@ -78,7 +78,7 @@ namespace UpdateWordDoc
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label2.Location = new System.Drawing.Point(84, 143);
+            this.label2.Location = new System.Drawing.Point(87, 131);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(98, 20);
             this.label2.TabIndex = 5;
@@ -87,7 +87,7 @@ namespace UpdateWordDoc
             // nameBox
             // 
             this.nameBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.nameBox.Location = new System.Drawing.Point(235, 137);
+            this.nameBox.Location = new System.Drawing.Point(245, 128);
             this.nameBox.Name = "nameBox";
             this.nameBox.Size = new System.Drawing.Size(486, 26);
             this.nameBox.TabIndex = 6;
@@ -95,7 +95,7 @@ namespace UpdateWordDoc
             // companyNameBox
             // 
             this.companyNameBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.companyNameBox.Location = new System.Drawing.Point(235, 169);
+            this.companyNameBox.Location = new System.Drawing.Point(245, 160);
             this.companyNameBox.Name = "companyNameBox";
             this.companyNameBox.Size = new System.Drawing.Size(486, 26);
             this.companyNameBox.TabIndex = 7;
@@ -103,7 +103,7 @@ namespace UpdateWordDoc
             // addressBox
             // 
             this.addressBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.addressBox.Location = new System.Drawing.Point(235, 204);
+            this.addressBox.Location = new System.Drawing.Point(245, 195);
             this.addressBox.Multiline = true;
             this.addressBox.Name = "addressBox";
             this.addressBox.Size = new System.Drawing.Size(486, 75);
@@ -113,7 +113,7 @@ namespace UpdateWordDoc
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label3.Location = new System.Drawing.Point(84, 175);
+            this.label3.Location = new System.Drawing.Point(87, 163);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(124, 20);
             this.label3.TabIndex = 9;
@@ -123,7 +123,7 @@ namespace UpdateWordDoc
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label4.Location = new System.Drawing.Point(84, 210);
+            this.label4.Location = new System.Drawing.Point(87, 198);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(72, 20);
             this.label4.TabIndex = 10;
@@ -132,7 +132,7 @@ namespace UpdateWordDoc
             // companyActivityBox
             // 
             this.companyActivityBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.companyActivityBox.Location = new System.Drawing.Point(235, 285);
+            this.companyActivityBox.Location = new System.Drawing.Point(245, 276);
             this.companyActivityBox.Name = "companyActivityBox";
             this.companyActivityBox.Size = new System.Drawing.Size(486, 26);
             this.companyActivityBox.TabIndex = 11;
@@ -141,7 +141,7 @@ namespace UpdateWordDoc
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label5.Location = new System.Drawing.Point(84, 291);
+            this.label5.Location = new System.Drawing.Point(87, 279);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(131, 20);
             this.label5.TabIndex = 12;
@@ -151,37 +151,37 @@ namespace UpdateWordDoc
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label6.Location = new System.Drawing.Point(384, 54);
+            this.label6.Location = new System.Drawing.Point(358, 42);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(148, 20);
             this.label6.TabIndex = 13;
             this.label6.Text = "Customize Resume";
             // 
+            // skillsLabel
+            // 
+            this.skillsLabel.AutoSize = true;
+            this.skillsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.skillsLabel.Location = new System.Drawing.Point(87, 311);
+            this.skillsLabel.Name = "skillsLabel";
+            this.skillsLabel.Size = new System.Drawing.Size(49, 20);
+            this.skillsLabel.TabIndex = 14;
+            this.skillsLabel.Text = "Skills:";
+            // 
             // skillsBox
             // 
-            this.skillsBox.AutoSize = true;
             this.skillsBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.skillsBox.Location = new System.Drawing.Point(84, 323);
+            this.skillsBox.Location = new System.Drawing.Point(245, 308);
             this.skillsBox.Name = "skillsBox";
-            this.skillsBox.Size = new System.Drawing.Size(49, 20);
-            this.skillsBox.TabIndex = 14;
-            this.skillsBox.Text = "Skills:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.textBox1.Location = new System.Drawing.Point(235, 317);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(486, 26);
-            this.textBox1.TabIndex = 15;
+            this.skillsBox.Size = new System.Drawing.Size(486, 26);
+            this.skillsBox.TabIndex = 15;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.textBox1);
+            this.ClientSize = new System.Drawing.Size(1000, 562);
             this.Controls.Add(this.skillsBox);
+            this.Controls.Add(this.skillsLabel);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.companyActivityBox);
@@ -216,8 +216,8 @@ namespace UpdateWordDoc
         private System.Windows.Forms.TextBox companyActivityBox;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label skillsBox;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label skillsLabel;
+        private System.Windows.Forms.TextBox skillsBox;
     }
 }
 
